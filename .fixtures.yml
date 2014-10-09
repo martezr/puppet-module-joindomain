@@ -1,0 +1,13 @@
+fixtures:
+  repositories:
+    stdlib:
+      repo: 'git://github.com/puppetlabs/puppetlabs-stdlib.git'
+      ref: '3.2.0'
+    powershell:
+      repo: 'git://github.com/puppetlabs/puppetlabs-powershell.git'
+      ref: '0.0.6'
+    reboot:
+      repo: 'git://github.com/puppetlabs/puppetlabs-reboot.git'
+      ref: '0.1.8'	  
+  symlinks:
+    joindomain: "#{source_dir}"
