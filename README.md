@@ -43,7 +43,7 @@ Specifies the organizational unit (OU) in the domain where the computer account 
 ===
 
 ## Sample usage:
-Join an Active Directory domain
+Join an Active Directory Domain
 
 <pre>
 joindomain::domain:	  'test.local'
