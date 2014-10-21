@@ -25,7 +25,8 @@ class joindomain (
   # Join Domain
   exec { 'Join Domain':
     command  => "\$pscredential_password = ConvertTo-SecureString -String ${password} -AsPlainText -Force;\$pscred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $username@$domain,\$pscredential_password;Add-Computer -domainname $domain -credential \$pscred",
-    provider => powershell,
+    unless   => "if((Get-WmiObject -Class Win32_ComputerSystem).domain -ne '${domain}'){ exit 1 }"
+	provider => powershell,
   }
   # Reboot the machine after the domain join operation
   reboot { 'Post Join Reboot':
