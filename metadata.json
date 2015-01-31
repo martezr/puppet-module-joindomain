@@ -1,9 +1,36 @@
 {
-  "name": "kinneygroup-joindomain",
+  "name": "martezr-joindomain",
   "version": "0.1.0",
   "summary": "Join Active Directory Domain",
-  "author": "Kinney Group",
+  "author": "Martez Reed",
   "description": "This module is used to join Windows systems to an Active Directory domain.",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/martezr/puppet-module-joindomain",
+  "project_page": "https://github.com/martezr/puppet-module-joindomain",
+  "issues_url": "https://github.com/martezr/puppet-module-joindomain/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2008",
+        "Server 2008 R2",
+        "Server 2012",
+        "Server 2012 R2",
+        "7",
+        "8"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
   "dependencies": [
     {
       "name": "joshcooper/powershell",
@@ -18,9 +45,4 @@
       "version_requirement": ">= 1.8.0"
     }
   ],
-  "types": [],
-  "checksums": {},
-  "source": "https://github.com/kinneygroup/puppet-module-joindomain.git",
-  "project_page": "https://github.com/kinneygroup/puppet-module-joindomain.git",
-  "license": "Apache License, Version 2.0"
 }
