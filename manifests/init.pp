@@ -14,7 +14,6 @@ class joindomain (
   $domain    =  undef,
   $username  =  undef,
   $password  =  undef,
-  #$oupath   =  undef,
 
   ) {
 
