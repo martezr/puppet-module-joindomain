@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "summary": "Join Active Directory Domain",
   "author": "Martez Reed",
-  "description": "This module is used to join Windows systems to an Active Directory domain.",
-  "license": "Apache License, Version 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/martezr/puppet-module-joindomain",
   "project_page": "https://github.com/martezr/puppet-module-joindomain",
   "issues_url": "https://github.com/martezr/puppet-module-joindomain/issues",
+  "tags": ["windows"],
   "operatingsystem_support": [
     {
       "operatingsystem": "Windows",

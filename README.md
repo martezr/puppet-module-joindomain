@@ -30,7 +30,7 @@ username
 ---------------------------
 The username for the domain account required to join the domain.
 
-- *Default*: "undef"
+- *Default*: 'undef'
 
 password
 ---------------
@@ -44,6 +44,10 @@ The password for the domain account required to join the domain.
 Join an Active Directory Domain
 
 <pre>
+---
+classes:
+  - joindomain
+  
 joindomain::domain:	  'test.local'
 joindomain::username: 'administrator'
 joindomain::password: 'P@$$w0rd1'

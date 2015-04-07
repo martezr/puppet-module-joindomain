@@ -6,7 +6,7 @@
 #
 # Actions:
 #
-# Requires: see Modulefile
+# Requires: see Metadata.json
 #
 # Sample Usage:
 #
@@ -31,4 +31,4 @@ class joindomain (
   reboot { 'Post Join Reboot':
     subscribe =>  Exec['Join Domain'],
   }
-}
+  }
